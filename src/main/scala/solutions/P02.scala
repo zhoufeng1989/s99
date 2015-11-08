@@ -1,3 +1,5 @@
+package solutions
+
 object P02 {
   def penultimate[T](lst: List[T]): T = lst match {
     case x :: _ :: Nil => x

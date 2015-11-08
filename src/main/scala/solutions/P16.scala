@@ -1,3 +1,5 @@
+package solutions
+
 object P16 {
   def drop[T](n: Int, lst: List[T]): List[T] = lst match {
     case Nil => Nil

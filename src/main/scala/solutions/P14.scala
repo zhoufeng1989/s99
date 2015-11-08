@@ -1,3 +1,5 @@
+package solutions
+
 object P14 {
   def dumplicate[T](lst: List[T]): List[T] = lst match {
     case x :: xs => x :: x :: dumplicate(xs)

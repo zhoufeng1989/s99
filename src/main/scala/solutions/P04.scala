@@ -1,3 +1,8 @@
+package solutions
+
+/**
+ * Created by zhoufeng on 15/11/8.
+ */
 object P04 {
   def length[T](lst: List[T]): Int = lst match {
     case Nil => 0

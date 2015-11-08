@@ -1,3 +1,5 @@
+package solutions
+
 object P01 {
   def last[T](lst: List[T]): T = lst match {
     case x :: Nil => x
