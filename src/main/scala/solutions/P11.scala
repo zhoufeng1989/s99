@@ -13,7 +13,7 @@ object P11 {
 
   // more type safe version.
 
-  def encodeModified[A](l: List[A]): List[Either[A, (Int, A)]] = {
+  def encodeModified2[A](l: List[A]): List[Either[A, (Int, A)]] = {
     if (l.isEmpty) throw new Exception("empty list found!")
     pack(l).map { a => if (a.length == 1) Left(a.head) else Right((a.length, a.head)) }
   }
